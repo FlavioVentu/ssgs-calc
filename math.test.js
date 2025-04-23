@@ -8,7 +8,7 @@ describe("Test per l'operatore somma", () => {
         expect(sum(2, 2)).toBe(4);
     });
 
-    test('adds 3 + 5 to equal 8', () => {
-        expect(sum(3, 5)).toBe(8);
+    test('adds 3 + 5 to equal 7', () => {
+        expect(sum(3, 5)).toBe(7);
     });
 });
