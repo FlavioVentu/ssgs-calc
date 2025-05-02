@@ -1,11 +1,12 @@
 name: CI with GitHub Actions
 on:
-  push:
+  # This workflow will run on every pull request to the main branch (opened, synchronize, or reopened).
+  pull_request:
     branches:
       - main
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -15,9 +16,17 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "22"
+          cache: "npm" # Cache npm dependencies
 
       - name: Install Dependencies
-        run: npm install
+        run: npm ci # Use npm ci for faster installs in CI
 
       - name: Run Tests
         run: npm test
+
+      # Upload test coverage report as an artifact
+      - name: Upload Test Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-coverage-report
+          path: tests/coverage/

@@ -1,4 +1,4 @@
-const op = require('./math');
+const op = require('../src/math');
 
 const sum = op[0];
 const sub = op[1];
