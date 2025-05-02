@@ -1,10 +1,11 @@
 {
     "name": "ssgs-calc",
     "version": "1.0.0",
-    "description": "A simple accademic cli calculator for basic operations in Node.js",
+    "description": "A simple accademic CLI calculator for basic operations in Node.js",
     "main": "src/index.js",
     "scripts": {
-        "test": "jest --coverage --verbose --coverageDirectory=tests/coverage"
+        "test": "jest --coverage --verbose --coverageDirectory=tests/coverage",
+        "start": "node src/index.js"
     },
     "keywords": [
         "calculator",
