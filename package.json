@@ -1,15 +1,34 @@
 {
     "name": "ssgs-calc",
     "version": "1.0.0",
-    "main": "index.js",
+    "description": "A simple accademic cli calculator for basic operations in Node.js",
+    "main": "src/index.js",
     "scripts": {
-        "test": "jest --coverage"
+        "test": "jest --coverage --verbose --coverageDirectory=tests/coverage"
     },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
+    "keywords": [
+        "calculator",
+        "math",
+        "jest",
+        "nodejs",
+        "cli",
+        "npm",
+        "accademic"
+    ],
+    "author": "FlavioVentu <S5667103@studenti.unige.it>",
+    "license": "MIT",
     "type": "commonjs",
-    "description": "",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/FlavioVentu/ssgs-calc.git"
+    },
+    "bugs": {
+        "url": "https://github.com/FlavioVentu/ssgs-calc/issues"
+    },
+    "homepage": "https://github.com/FlavioVentu/ssgs-calc#readme",
+    "engines": {
+        "node": ">=18"
+    },
     "devDependencies": {
         "jest": "^29.7.0"
     }
